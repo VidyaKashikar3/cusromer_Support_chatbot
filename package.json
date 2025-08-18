@@ -1,12 +1,10 @@
-
-# Create a valid package.json content as a string
-package_json_content = '''{
+{
   "name": "puppeteer-project",
   "version": "1.0.0",
   "description": "A Puppeteer automation project with dotenv and puppeteer-extra plugins",
-  "main": "script.js",
+  "main": "automation.js",
   "scripts": {
-    "start": "node script.js"
+    "start": "node automation.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
@@ -16,11 +14,4 @@ package_json_content = '''{
   },
   "author": "",
   "license": "MIT"
-}'''
-
-# Write the content to a package.json file
-with open("package.json", "w") as f:
-    f.write(package_json_content)
-
-print("Valid package.json file has been created successfully.")
-
+}
