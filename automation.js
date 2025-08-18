@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
 
   // Step 1: Go to login page
-  await page.goto('https://example.com/login');
+  await page.goto('https://www.tutorialspoint.com/');
 
   // Step 2: Fill in login form
   await page.type('#username', 'your_username');
