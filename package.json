@@ -1,0 +1,27 @@
+import json
+
+# Define the package configuration
+package_config = {
+    "name": "puppeteer-project",
+    "version": "1.0.0",
+    "description": "A Puppeteer automation project with dotenv and puppeteer-extra plugins",
+    "main": "script.js",
+    "scripts": {
+        "start": "node script.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "puppeteer": "^21.3.8",
+        "puppeteer-extra": "^3.3.4",
+        "puppeteer-extra-plugin-stealth": "^2.11.3"
+    },
+    "author": "",
+    "license": "MIT"
+}
+
+# Save the configuration to package.json
+with open("package.json", "w") as f:
+    json.dump(package_config, f, indent=2)
+
+print("package.json file has been created successfully.")
+
